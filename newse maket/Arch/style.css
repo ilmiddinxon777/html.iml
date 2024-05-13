@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+
+}
+.box{
+    padding: 40px;
+    margin: auto;
+    width: 1000px;
+    /* height: 1300px; */
+    background-color:#283F44;
+
+}
+.chiziq{
+    width: 280px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 255px;
+    top: 835px;
+}
+.bar1{
+    margin-left: 15px;
+}
+.bar1 p{
+    margin-left: 80px;
+}
+.login{
+    margin-left: 30px;
+}
+.login a{
+    margin-left: 40px;
+    font-size: 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+img{
+    margin-left: 69px;
+    width: 870px;
+}
+h2{
+    text-align: center;
+    margin-left: 80px;
+    font-size: 20px;
+    color: aliceblue;
+}
+p{
+    margin-left: 50px;
+    font-size: 8px;
+    color: rgb(131, 137, 143);
+}
+.p1{
+    font-size: 22px;
+    color:aliceblue;
+}
+.section22{
+    padding: 25px;
+    margin-left: 55px;
+}
+.sect22{
+    margin-left: 00px;
+}
+.sec1 h1{
+    font-size: 60px;
+    color: aliceblue;
+}
+.sec1 h3{
+    font-size: 15px;
+    color: aliceblue;
+}
+.buttom{
+    padding: 10px;
+    /* border: 5px solid red; */
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.sec22{
+
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header{
+            position: sticky;
+            top: 0px;
+        }
+        .lvl1{
+            list-style: none;
+        }
+        .lvl1 li{
+            float: left;
+            width: 200px;
+            position: relative;
+        }
+        .lvl1 li a{
+            display: block;
+            font-size: 1.5rem;
+            line-height: 50px;
+            color: white;
+            background-color: orange;
+            text-decoration: none;
+            text-align: center;
+            transition: all .3s;
+        }
+        .lvl1 li a:hover{
+            color: orange;
+            background-color: white;
+        }
+        .lvl2{
+            position: absolute;
+            width: 200px;
+            list-style: none;
+            display: none;
+        }
+        .lvl1 li:hover .lvl2{
+            display: block;
+        }
+        .lvl2 li:hover .lvl3{
+            display: block;
+        }
+        .lvl3, .lvl4{
+            width: 200px;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+        }
+        .lvl3 li:hover .lvl4{
+            display: block;
+        }
+        .up{
+            /* text-decoration: none; */
+            position: fixed;
+            font-size: 30px;
+            bottom: 20px;
+            right: 20px;
+        }
+        .content{
+            padding-top: 0px;
+        }
+        .img{
+            width: 1200px;
+            height: 100px;
+        }
+        .tozalash{
+            clear: both;
+        }
+        .rek{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            top: 300px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jpg" class="rek">
+    <div class="container">
+        <img src="2.jpg" class="img">
+        <div class="header">
+            <nav>
+                <ul class="lvl1">
+                    <li>
+                        <a href="#">Manu1</a>
+                        <ul class="lvl2">
+                            <li><a href="#">Manu1.1</a></li>
+                            <li>
+                                <a href="#">Manu1.2</a>
+                                <ul class="lvl3">
+                                    <li><a href="#">Manu1.2.1</a></li>
+                                    <li><a href="#">Manu1.2.2</a></li>
+                                    <li>
+                                        <a href="#">Manu1.2.3</a>
+                                        <ul class="lvl4">
+                                            <li><a href="#">Manu1.2.3.1</a></li>
+                                            <li><a href="#">Manu1.2.3.2</a></li>
+                                            <li><a href="#">Manu1.2.3.3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Manu1.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Manu1.3</a></li>
+                            <li><a href="#">Manu1.4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Manu2</a>
+                        <ul class="lvl2">
+                            <li><a href="#">Manu2.1</a></li>
+                            <li><a href="#">Manu2.2</a></li>
+                            <li><a href="#">Manu2.3</a></li>
+                            <li>
+                                <a href="#">Manu2.4</a>
+                                <ul class="lvl3">
+                                    <li><a href="#">Manu2.4.1</a></li>
+                                    <li>
+                                        <a href="#">Manu2.4.2</a>
+                                        <ul class="lvl4">
+                                            <li><a href="#">Manu2.4.2.1</a></li>
+                                            <li><a href="#">Manu2.4.2.2</a></li>
+                                            <li><a href="#">Manu2.4.2.3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Manu2.4.3</a></li>
+                                    <li><a href="#">Manu2.4.4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Manu3</a>
+                        <ul class="lvl2">
+                            <li><a href="#">Manu3.1</a></li>
+                            <li><a href="#">Manu3.2</a></li>
+                            <li><a href="#">Manu3.3</a></li>
+                            <li><a href="#">Manu3.4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Manu4</a>
+                        <ul class="lvl2">
+                            <li><a href="#">Manu4.1</a></li>
+                            <li><a href="#">Manu4.2</a></li>
+                            <li>
+                                <a href="#">Manu4.3</a>
+                                <ul class="lvl3">
+                                    <li><a href="#">Manu4.3.1</a></li>
+                                    <li><a href="#">Manu4.3.2</a></li>
+                                    <li><a href="#">Manu4.3.3</a></li>
+                                    <li>
+                                        <a href="#">Manu4.3.4</a>
+                                        <ul class="lvl4">
+                                            <li><a href="#">Manu4.3.4.1</a></li>
+                                            <li><a href="#">Manu4.3.4.2</a></li>
+                                            <li><a href="#">Manu4.3.4.3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Manu4.4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Manu5</a></li>
+                    <li><a href="#">Manu6</a></li>
+                </ul>
+                <div class="tozalash"></div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Lorem ipsum dolor s Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut debitis voluptatibus possimus iste obcaecati, eligendi quisquam aliquid? Nostrum voluptas dolores ducimus ipsa cupiditate odit expedita eaque, doloribus nesciunt ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat fuga voluptatibus veritatis molestiae suscipit, animi obcaecati quas earum, unde magni. Temporibus soluta quam, nemo numquam exercitationem dolorum corporis quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam repellendus voluptas expedita, quaerat laudantium quam cum debitis dolore quia! Cumque obcaecati, necessitatibus dolore natus quas assumenda accusamus consequuntur nam amet.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Of Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod nulla repellendus provident odit aliquam excepturi minus facere nam, architecto recusandae, neque asperiores quas in hic ea distinctio ut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero deleniti ex, at quas molestias cumque totam provident, voluptatem doloremque harum illo similique esse. Commodi voluptatem dolore placeat quae porro nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, mollitia! Eaque iusto aut sit repellendus reprehenderit nemo laboriosam nam sunt quis quod labore, doloremque magni sapiente temporibus impedit cum quisquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad reiciendis fuga commodi, quaerat voluptas laboriosam quasi totam illo possimus, iure, facere excepturi delectus asperiores unde porro maxime odit placeat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit tempore, quisquam consectetur cum nobis rem illum! Repudiandae doloribus at nobis corporis, unde labore laboriosam aliquid, velit aperiam modi tempora doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore et ducimus? Temporibus fugiat libero, optio necessitatibus voluptatem, possimus cupiditate hic alias ipsum fuga debitis vitae, tempora rem facere deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ab omnis ratione minima mollitia tempore natus eveniet, numquam culpa cum reiciendis quibusdam cupiditate error, voluptas incidunt temporibus sint! Incidunt, vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime doloribus itaque saepe facere, veniam velit culpa nostrum eum dolor enim provident fugiat libero tenetur modi iste porro quis accusantium doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae fuga, placeat dolorem odit, soluta in accusamus sint asperiores cum doloribus sed corrupti saepe nam nulla quam atque! Consequuntur, fugiat harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ab vero eveniet iure commodi repellat perspiciatis, saepe nisi deleniti debitis maiores animi impedit dolores assumenda magni quas sequi omnis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti minima eveniet, doloribus natus dignissimos quibusdam atque necessitatibus in omnis iusto officiis eos explicabo dicta tenetur earum, doloremque consectetur numquam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi adipisci at commodi modi iure tempore repellendus necessitatibus impedit fuga, ad, consectetur voluptate! Quaerat porro laborum sint aliquam cumque, quibusdam quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti iusto, ab fugiat rerum nesciunt aliquid ipsam accusantium commodi error assumenda nihil, aut eos natus hic dolor tempora. Provident, corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolorum, iste sequi amet nam excepturi quis quisquam explicabo itaque ab non accusamus dicta rerum cumque magnam labore architecto rem nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, tenetur accusamus. Et quod neque odit vero. Quam quaerat obcaecati aliquid voluptatem fugiat quidem placeat nisi! In repellat iusto vero autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eos. Laboriosam nemo quod minima voluptas consequatur? Eius debitis impedit sequi commodi beatae velit, voluptatibus nobis nostrum consequatur vitae, praesentium rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur corporis ad cupiditate fugit. Repudiandae incidunt temporibus possimus delectus tenetur? Repellat, itaque. Consequuntur natus, ullam fugiat suscipit sint pariatur consectetur. lo
+                it Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod nulla repellendus provident odit aliquam excepturi minus facere nam, architecto recusandae, neque asperiores quas in hic ea distinctio ut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero deleniti ex, at quas molestias cumque totam provident, voluptatem doloremque harum illo similique esse. Commodi voluptatem dolore placeat quae porro nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, mollitia! Eaque iusto aut sit repellendus reprehenderit nemo laboriosam nam sunt quis quod labore, doloremque magni sapiente temporibus impedit cum quisquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad reiciendis fuga commodi, quaerat voluptas laboriosam quasi totam illo possimus, iure, facere excepturi delectus asperiores unde porro maxime odit placeat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit tempore, quisquam consectetur cum nobis rem illum! Repudiandae doloribus at nobis corporis, unde labore laboriosam aliquid, velit aperiam modi tempora doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore et ducimus? Temporibus fugiat libero, optio necessitatibus voluptatem, possimus cupiditate hic alias ipsum fuga debitis vitae, tempora rem facere deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ab omnis ratione minima mollitia tempore natus eveniet, numquam culpa cum reiciendis quibusdam cupiditate error, voluptas incidunt temporibus sint! Incidunt, vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime doloribus itaque saepe facere, veniam velit culpa nostrum eum dolor enim provident fugiat libero tenetur modi iste porro quis accusantium doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae fuga, placeat dolorem odit, soluta in accusamus sint asperiores cum doloribus sed corrupti saepe nam nulla quam atque! Consequuntur, fugiat harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ab vero eveniet iure commodi repellat perspiciatis, saepe nisi deleniti debitis maiores animi impedit dolores assumenda magni quas sequi omnis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti minima eveniet, doloribus natus dignissimos quibusdam atque necessitatibus in omnis iusto officiis eos explicabo dicta tenetur earum, doloremque consectetur numquam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi adipisci at commodi modi iure tempore repellendus necessitatibus impedit fuga, ad, consectetur voluptate! Quaerat porro laborum sint aliquam cumque, quibusdam quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti iusto, ab fugiat rerum nesciunt aliquid ipsam accusantium commodi error assumenda nihil, aut eos natus hic dolor tempora. Provident, corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolorum, iste sequi amet nam excepturi quis quisquam explicabo itaque ab non accusamus dicta rerum cumque magnam labore architecto rem nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, tenetur accusamus. Et quod neque odit vero. Quam quaerat obcaecati aliquid voluptatem fugiat quidem placeat nisi! In repellat iusto vero autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eos. Laboriosam nemo quod minima voluptas consequatur? Eius debitis impedit sequi commodi beatae velit, voluptatibus nobis nostrum consequatur vitae, praesentium rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur corporis ad cupiditate fugit. Repudiandae incidunt temporibus possimus delectus tenetur? Repellat, itaque. Consequuntur natus, ullam fugiat suscipit sint pariatur consectetur. loficiis ex possimus ut illum quae amet, harum, perspiciatis voluptatibus reprehenderit obcaecati molestias minus quos praesentium maxime facere. Delectus tempora eaque earum. amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus molestias commodi reprehenderit quasi quaerat distinctio numquam amet culpa velit voluptatem necessitatibus ratione ex sit, quo quae, debitis quos vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nemo commodi quisquam quaerat ullam reiciendis laboriosam asperiores fugit aperiam facilis! Eligendi, expedita. Sit consequuntur velit esse minus voluptatibus voluptas accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima quod beatae libero rem quidem facilis unde impedit aliquam non harum hic laborum veniam, veritatis culpa eius nemo fugit nostrum. Iure repellat illum vitae provident cupiditate itaque possimus impedit perferendis, accusamus exercitationem nisi delectus, perspiciatis voluptatibus laudantium architecto! Labore placeat distinctio est! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, amet molestiae repellendus velit architecto illo at. Aspernatur, nulla neque. Animi similique fugiat mollitia omnis placeat vero a nam velit nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusamus labore minus nobis ipsa dignissimos atque illum nostrum itaque et ex culpa repudiandae quidem magni unde, similique,
+            </h1>   
+        </div>
+        <a href="#" class="up">👆</a>
+    </div>
+</body>
+</html>

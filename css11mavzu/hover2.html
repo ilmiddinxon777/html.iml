@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        .a{
+            width: 650px;
+            height: 650px;
+            position: relative;
+        }
+        .a:hover .b{
+            opacity: 0.7;
+        }
+        .b{
+            width: 650px;
+            height: 650px;
+            color: gray;
+            position: absolute;
+            transition: all 3s;
+        }
+        .a:hover .c{
+            opacity: 0;
+        }
+        .c{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            opacity: 1;
+            transition: all 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img src="notebook4.jpg" class="b">
+            <p class="c"> narxi: 700$ <br> joyi: 1TB <br> dakument:bor</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style type="text/css">
+        .block{
+            width: 1500px;
+            height: 670px;
+            margin: 0 auto;
+            background-image: url('media/ball.jpg'),url(''),url(''),url('media/messi.jpg'),url('media/neymar.jpg'),url('media/qalampir.jpg'),url('media/qatar.jpg'),url('media/salah.jpg'),url(''),url('media/oq.jpg'),url('media/ranaldo.jpeg'),url('media/uchun soch.jpg'),url('media/futbal.jpg');
+            background-color: red;
+            position:absolute;
+            background-size: 50px 50px,0px 0px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100% 100%;
+            background-repeat: no-repeat;
+            background-position: 200px center,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,800px 250px,940px 100px,940px 400px,0px 0px;
+            animation-name: bajar;
+            animation-duration:10s;
+        }
+        .gol{
+          font-size: 100px;
+          color: green;
+          background-color: red;
+          position: absolute;
+          left: 580px;
+          top: 300px;
+          visibility: hidden;
+          animation-name: goll;
+          animation-duration: 1.5s;
+          animation-delay: 3s;
+          animation-timing-function: lineor;
+        }
+
+        @keyframes bajar{
+            0%{
+                background-position: 200px center,500px center,150px 100px,100px 280px,400px 250px,450px 100px,450px 400px,650px 100px,650px 400px,800px 250px,940px 100px,940px 400px,0px 0px;
+            }
+            10%{
+                background-position: 550px 180px,center center,150px 100px,100px 280px,400px 250px,450px 100px,450px 400px,650px 100px,650px 400px,800px 250px,940px 100px,940px 400px,0px 0px;
+            }
+            20%{
+                background-position: 800px 450px,center center,200px 150px,100px 280px,300px 250px,500px 80px,550px 500px,750px 100px,450px 600px,800px 250px,940px 100px,750px 400px,0px 0px;
+            }
+            30%{
+                <background-positi></background-positi>on: 1400px center,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,940px 100px,940px 400px,0px 0px;
+            }
+            40%{
+                background-position: 1200px 200px,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+            50%{
+                background-position: 800px 200px,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,750px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+            60%{
+                background-position: 610px 200px,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+            70%{
+                background-position: 550px 150px,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+            80%{
+                background-position: 1000px 300px,center center,150px 100px,100px 280px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+            90%{
+                background-position: 900px 300px,center center,150px 100px,100px 380px,300px 250px,450px 100px,450px 400px,650px 100px,650px 400px,900px 250px,1140px 100px,940px 400px,0px 0px;
+            }
+
+
+        }
+        @keyframes goll{
+          0%{
+            visibility: visible;
+            transform: rotate(360deg);
+            font-size: 20px;
+            color: yellow;
+          }
+          100%{
+            font-size: 120px;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="gol">GOLL</div>
+    </div>
+</body>
+</html>
